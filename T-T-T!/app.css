@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #102753d7;
+}
+
+.row {
+    height: 60vmin;
+    width: 60vmin;
+    gap: 2vmin;
+    border: none;
+    color: white;
+}
+
+.box {
+    font-family: 'Indie Flower', cursive;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 15px;
+    border: 2px solid #778da9;
+    background-color: #fffffe;
+    box-shadow: 7px 0px 8px #b3b3b34e;
+    color: rgba(210, 213, 222, 0.973);
+    
+}
+
+.box:hover {
+    background-color: #f1f1f1; 
+  }
+
+p {
+    color: #f1faee;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.reSetBtn {
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fffffe;
+    border: none;
+    background-color: #457b9d;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+
+/*
+Explanation:
+
+Initial styles: .box class defines the initial appearance of the button, including background color, text color, and positioning.
+Click behavior:
+.box:disabled styles apply when the button is clicked.
+opacity: 1 overrides the default opacity reduction of disabled buttons.
+.box:disabled .text ensures the text background remains white even after clicking.
+Text positioning: .box .text styles apply to the button text element (assumed inside the button).
+color: blue sets the text color.
+position: absolute allows absolute positioning within the button.
+top: 50%; left: 50%; centers the text vertically and horizontally.
+transform: translate(-50%, -50%); adjusts the text positioning for centering.
+z-index: -1 places the text slightly behind the button background.
+Additional considerations:
+
+Adjust padding, font-size, and other styles as needed.
+Ensure your HTML structure includes a separate text element or span within the button to apply these styles effectively.
+This code addresses the potential issues raised in the previous response
+*/
+
+
+.box {
+    /* Initial button styles */
+    background-color: white;
+    color: rgb(245, 242, 31);
+    border: none;
+    padding: 10px 20px;
+    font-size: 40px;
+    position: relative;
+    /* Allow z-index layering */
+}
+
+.box:disabled {
+    /* Disable opacity effect on clicked button */
+    opacity: 1;
+}
+
+.box:disabled .text {
+    /* Maintain white background after click */
+    background-color: white;
+}
+
+.box .text {
+    /* Text styles (apply initially and after click) */
+    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* Place text above background */
+}
