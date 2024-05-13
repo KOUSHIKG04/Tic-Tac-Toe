@@ -18,7 +18,8 @@ body {
 }
 
 .box {
-    font-family: 'Indie Flower', cursive;
+/*     font-family: 'Indie Flower', cursive; */
+    font-family: "Noto Sans", sans-serif;
     height: 18vmin;
     width: 18vmin;
     border-radius: 15px;
@@ -35,7 +36,8 @@ body {
 
 p {
     color: #f1faee;
-    font-family: 'Indie Flower', cursive;
+/*     font-family: 'Indie Flower', cursive; */
+    font-family: "Noto Sans", sans-serif;
     font-size: 40px;
 }
 
@@ -46,7 +48,8 @@ p {
     color: #fffffe;
     border: none;
     background-color: #457b9d;
-    font-family: 'Indie Flower', cursive;
+/*     font-family: 'Indie Flower', cursive; */
+    font-family: "Noto Sans", sans-serif;
 }
 
 
